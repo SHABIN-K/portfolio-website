@@ -1,105 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Shabin k</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    font-size: 1rem;
-    line-height: 1.65;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #8e44ad 50%, #e9dbef 50%);
-    color: #fff;
-}
-
-/*Main Styles*/
-
-.wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-.details {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 4rem;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.art {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.art img {
-    width: 70%;
-}
-
-.title {
-    display: inline-block;
-    font-size: 40px;
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    background-color: #fff;
-    width: 140px;
-}
-
-.intro {
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-}
-
-.description {
-    margin-bottom: 2rem;
-    line-height: 1.77;
-    color: #ccc;
-}
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="details">
-            <h1 class="title">Comming Soon</h1>
-            <h3 class="intro">
-                We are working hard to give you a better experience.
-            </h3>
-            <p class="description">
-                We are working hard on it & the site  may go live very soon. We promise,it will be worth the wait !
-            </p>
-        </div>
-        <div class="art">
-            <img src="under_construction.svg" alt="">
-        </div>
-    </div>
+    <title>protfolio | shabin k</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <div class="nav_head"><h1>Mohammed Shabin k</h1></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-lg-1 order-2 banner-content">
+                    <h2 class="text-uppercase position-relative">Hell0</h2>
+                    <h1 class="text-uppercase">I am Mohammed shabin k</h1>
+                    <h5 class="text-uppercase">mern stack developer</h5>
+                   
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1">
+                    <div class="top-right-img">
+                        <img src="images/home-right.webp" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section exit -->
+     <!-- About section -->
+     <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <img src="images/about-us.webp" class="img-fluid" alt="About Us">
+                </div>
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2>let’s <br>Introduce about <br>myself</h2><br>
+                    <h3>I'm MOHAMMED SHABIN K</h3>
+                    <span class="tag">MERN Stack Developer</span>
+                    
+                    <p>I am a MERN-Stack developer based in Kerala, India. 
+                      I am an BCA student from Calicut University.
+                      I am very passionate about improving my coding skills & developing applications & websites.
+                      I build WebApps and Websites using MERN Stack.
+                      Working for myself to improve my skills.
+                      Love to build Full-Stack clones. </p>
+                    <a href="https://drive.google.com/file/d/15dYmq38GGm_4Su0kHxLprPUmMTJ/view?usp=sharing" class="main-btn primary-btn mt-4">Download CV</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section exit -->
+    <!-- skills section starts -->
+<section class="skills" id="skills">
+    <div class="col-sm-12 text-center mb-5"> 
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    </div>
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/html-5--v2.png" alt="html5"/>
+                <span>HTML 5</span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/nolan/64/github.png" alt="github"/>
+                <span>gitHub</span>
+              </div>
+      </div>
+      <div class="bar">
+        <div class="info">
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="css"/>
+          <span>CSS</span>
+        </div>
+</div>
+
+
+<div class="bar">
+  <div class="info">
+    <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="bootstrap"/>
+    <span>Bootstrap</span>
+  </div>
+
+
+</div>
+
+<div class="bar">
+  <div class="info">
+    <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="node js"/>
+    <span>Node js</span>
+  </div>
+
+
+</div>
+<div class="bar">
+  <div class="info">
+    <img src="https://img.icons8.com/color/48/000000/django.png" alt="django"/>
+    <span>Django</span>
+  </div>
+
+
+</div>
+</div>
+
+  <div class="row" id="skillsContainer">
+
+    <div class="bar">
+      <div class="info">
+        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="js"/>
+        <span>javaScript</span>
+      </div>
+   
+
+
+    </div>
+    <div class="bar">
+      <div class="info">
+        <img src="https://img.icons8.com/color/48/000000/c.png" alt="c"/>
+        <span>C </span>
+      </div>
+   
+
+    </div>
+
+
+<div class="bar">
+<div class="info">
+  <img src="https://img.icons8.com/color/48/000000/python.png" alt="py"/>
+  <span>python</span>
+</div>
+
+
+</div>
+
+
+<div class="bar">
+<div class="info">
+  <img src="https://img.icons8.com/plasticine/100/000000/react.png" alt="react"/>
+<span>React js</span>
+</div>
+
+
+</div>
+
+<div class="bar">
+<div class="info">
+  <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="database"/>
+<span>mongodb</span>
+</div>
+
+
+</div>
+<div class="bar">
+<div class="info">
+  <img src="https://img.icons8.com/color/48/000000/my-sql.png" alt="mysql"/>
+<span>MySql</span>
+</div>
+
+
+</div>
+</div>
+
+</section>
+<!-- skills section ends -->
+ <!-- Services section -->
+ <section id="services" class="services_wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+              <h2>SERVICE OFFERS</h2>
+              <p>Is give may shall likeness made yielding spirit a itself togeth created after sea <br
+                      class="d-none d-lg-block">
+                  is in beast beginning signs open god you're gathering ithe</p>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+              <div class="card rounded-0 border-0 text-center py-5 px-3">
+                  <div>
+                      <img src="./images/services-img/mouse.webp">
+                  </div>
+                  <h5 class="text-uppercase mt-4 mb-3">Web DEVELOPment</h5>
+                  <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+              <div class="card rounded-0 border-0 text-center py-5 px-3">
+                  <div>
+                      <img src="./images/services-img/ui-ux.webp">
+                  </div>
+                  <h5 class="text-uppercase mt-4 mb-3">UI/UX DESIGN</h5>
+                  <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+              <div class="card rounded-0 border-0 text-center py-5 px-3">
+                  <div>
+                      <img src="./images/services-img/website.webp">
+                  </div>
+                  <h5 class="text-uppercase mt-4 mb-3">WEB DESIGN</h5>
+                  <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+              <div class="card rounded-0 border-0 text-center py-5 px-3">
+                  <div>
+                      <img src="./images/services-img/seo.webp">
+                  </div>
+                  <h5 class="text-uppercase mt-4 mb-3">SEO OPTIMIZE</h5>
+                  <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--Services section exit -->
+
+ <!-- contact section starts -->
+<section class="contact" id="contact">
+  
+   <div class="col-sm-12 text-center mb-5">
+    <h2 class="head_contact"><i class="fas fa-headset"></i> Get in <span style="color:#7608a6">Touch</span></h2>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./images/contact1.png" alt="contact pic">
+      </div>
+    <form action="" id="contactForm">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" id="emailid" placeholder="Email" pattern=".+@gamil.com" size="30" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" id="tel"  min="10" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" id="msg" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+ <!-- contact section ended-->
+
+ <!---footer section starts-->
+ <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+       <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                  <div class="col-12 text-center">
+                     <div class="my-4 social-icons">
+                      <h5>Follow Me</h5>
+                       <ul class="list-unstyled d-flex justify-content-center align-items-center">
+                         <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/-shabink/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                         <li><a class="github" aria-label="GitHub" href="https://github.com/SHABIN-K" target="_blank"><i class="fab fa-github"></i></a></li>
+                         <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/shabink9" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                         <li><a class="telegram" aria-label="Telegram" href="https://t.me/shabink" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                         <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/_shabink/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                          <li><a class="dev" aria-label="Dev" href="https://dev.to/shabink" target="_blank"><i class="fab fa-dev"></i></a></li>
+                       </ul>
+                   </div>
+                 </div>
+                 <div class="col-lg-8 col-sm-12">
+                        <p class="footer-text text-center my-2">Copyright © 2022 <a href="#home">shabink</a></p>
+                  </div>
+             </div>
+        </div>
+   </section>
+   <!---footer section  ended-->
+     
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
+
